@@ -8,6 +8,10 @@ const { data: page } = await useAsyncData(route.path, () => {
 <template>
   <div class="text-center">
     <h1>{{ page.title }}</h1>
+    <p>
+      {{ page.street }}<br />
+      {{ page.city }}, {{ page.state }} {{ page.zipcode }}
+    </p>
     <p>{{ page.description }}</p>
     <ContentRenderer :value="page" />
   </div>

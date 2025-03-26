@@ -1,6 +1,13 @@
 ---
 title: Slocum Memorial Skatepark
+street: 2211 Eppinger Blvd
+city: Thornton
+state: CO
+zipcode: 80229
+latitude: 39.867565106096
+longitude: -104.95818402297
 description: The Thomas J. Slocum Memorial skatepark is a great skatepark with lots of fun obstacles. It's fairly large and has a psuedo pump track/snake run around the outside of it.
+tags: 'pump track'
 ---
 
 ![Slocum Skatepark satellite view](/images/colorado/slocum/slocum-skatepark-satellite-view.jpg)
