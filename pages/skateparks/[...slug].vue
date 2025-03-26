@@ -7,8 +7,8 @@ const { data: page } = await useAsyncData(route.path, () => {
 
 <template>
   <div>
-    {{ route.path }}
+    <h1>{{ page.title }}</h1>
+    <p>{{ page.description }}</p>
     <ContentRenderer :value="page" />
-    <div>individual skateparks go here. slocum? for example</div>
   </div>
 </template>
