@@ -6,7 +6,7 @@ const { data: page } = await useAsyncData(route.path, () => {
 </script>
 
 <template>
-  <div>
+  <div class="text-center">
     <h1>{{ page.title }}</h1>
     <p>{{ page.description }}</p>
     <ContentRenderer :value="page" />
