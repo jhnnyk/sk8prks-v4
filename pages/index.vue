@@ -1,18 +1,20 @@
 <script setup lang="ts">
 const { data: docs } = await useAsyncData('skatepark-items', () => {
   return queryCollection('skateparks')
-    .order('title', 'DESC')
-    .select('title', 'path', 'description')
+    .order('title', 'ASC')
+    .select('title', 'path')
     .all()
 })
 </script>
 
 <template>
   <div>
-    [{{ docs }}]
-    <NuxtLink v-for="doc in docs" :key="doc.path" :to="doc.path">
-      <h2>{{ doc.title }}</h2>
-      <p>{{ doc.description }}</p>
-    </NuxtLink>
+    <ul>
+      <li>
+        <NuxtLink v-for="doc in docs" :key="doc.path" :to="doc.path">
+          <h2>{{ doc.title }}</h2>
+        </NuxtLink>
+      </li>
+    </ul>
   </div>
 </template>

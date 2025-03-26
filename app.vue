@@ -1,5 +1,7 @@
 <template>
-  <div class="text-center text-xl">hello</div>
+  <div class="text-center text-xl">
+    <NuxtLink to="/">sk8prks.com</NuxtLink>
+  </div>
   <NuxtLayout>
     <NuxtPage />
   </NuxtLayout>
