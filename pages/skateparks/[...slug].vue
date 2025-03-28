@@ -1,3 +1,4 @@
+<!-- eslint-disable vue/html-self-closing -->
 <script lang="ts" setup>
 const route = useRoute()
 const { data: page } = await useAsyncData(route.path, () => {
@@ -6,13 +7,13 @@ const { data: page } = await useAsyncData(route.path, () => {
 </script>
 
 <template>
-  <div class="text-center">
-    <h1>{{ page.title }}</h1>
-    <p>
+  <div class="skatepark-content">
+    <h1 class="text-2xl">{{ page.title }}</h1>
+    <p class="mb-4">
       {{ page.street }}<br />
       {{ page.city }}, {{ page.state }} {{ page.zipcode }}
     </p>
-    <p>{{ page.description }}</p>
+    <p class="mb-4">{{ page.description }}</p>
     <ContentRenderer :value="page" />
   </div>
 </template>
