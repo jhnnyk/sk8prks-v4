@@ -1,5 +1,5 @@
 <!-- eslint-disable vue/html-self-closing -->
-<script lang="ts" setup>
+<script setup>
 const route = useRoute()
 const { data: page } = await useAsyncData(route.path, () => {
   return queryCollection('skateparks').path(route.path).first()
