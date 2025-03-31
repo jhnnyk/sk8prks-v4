@@ -14,6 +14,7 @@ const { data: docs } = await useAsyncData('skatepark-items', () => {
         <NuxtLink v-for="doc in docs" :key="doc.path" :to="doc.path">
           <h2>{{ doc.title }}</h2>
         </NuxtLink>
+        ({{ docs?.length }})
       </li>
     </ul>
   </div>
